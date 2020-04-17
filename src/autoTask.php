@@ -44,7 +44,7 @@ class autoTask extends Command
     public function handle()
     {
         // 筛选未过期且未完成的任务
-        $crontab_list = Crontab::where(['status' => 'normal'])->orderBy('weigh','desc')->orderBy('id','desc')->get();
+        $crontab_list = Crontab::where(['status' => 'normal'])->where('project_id', env('PROJECTID'))->orderBy('weigh','desc')->orderBy('id','desc')->get();
         if (!$crontab_list) {
             return null;
         }
@@ -145,6 +145,7 @@ class autoTask extends Command
         $crontLog = new CrontabLog();
         $crontLog->type = $type;
         $crontLog->cid = $cid;
+        $crontLog->project_id = env('PROJECTID', '');
         $crontLog->title = $title;
         $crontLog->status = $status;
         $crontLog->remark = $remark;

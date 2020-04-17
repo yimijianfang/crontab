@@ -17,6 +17,7 @@ class CreateCrontabTable extends Migration
             $table->increments('id');
             $table->string('type',10)->comment('类型');
             $table->string('title',150)->comment('标题');
+            $table->string('project_id', 20)->comment('项目ID');
             $table->text('contents')->comment('内容');
             $table->string('schedule',100)->comment('Cron表达式');
             $table->tinyInteger('sleep')->default(0)->comment('延迟秒数执行');
@@ -32,6 +33,7 @@ class CreateCrontabTable extends Migration
         Schema::create('crontab_log', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type',10)->comment('类型');
+            $table->string('project_id',20)->comment('项目ID');
             $table->integer('cid')->comment('任务的ID');
             $table->string('title',150)->comment('标题');
             $table->mediumText('remark')->comment('备注');

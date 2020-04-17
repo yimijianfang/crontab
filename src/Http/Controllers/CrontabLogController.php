@@ -58,6 +58,12 @@ class CrontabLogController extends Controller
     protected function grid()
     {
         $grid = new Grid(new CrontabLog());
+        $projectId = env('PROJECTID', '');
+        if($projectId){
+            $grid->model()->where('project_id', $projectId)->orderBy('id', 'desc');
+        }else{
+            $grid->model()->orderBy('id', 'desc');
+        }
         $grid->disableCreateButton();
         $grid->id('Id')->sortable();
         $grid->type('类型')->using(CrontabController::CRONTAB_TYPE)->label('default');
