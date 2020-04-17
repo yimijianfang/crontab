@@ -1,10 +1,10 @@
 <?php
 
-namespace ArrowJustDoIt\Crontab;
+namespace Yimijianfang\Crontab;
 
 use Illuminate\Console\Command;
-use ArrowJustDoIt\Crontab\Http\Models\Crontab;
-use ArrowJustDoIt\Crontab\Http\Models\CrontabLog;
+use Yimijianfang\Crontab\Http\Models\Crontab;
+use Yimijianfang\Crontab\Http\Models\CrontabLog;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Cron\CronExpression;

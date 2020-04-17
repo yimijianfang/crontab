@@ -21,13 +21,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ArrowJustDoIt\\Crontab\\": "src/"
+            "Yimijianfang\\Crontab\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ArrowJustDoIt\\Crontab\\CrontabServiceProvider"
+                "Yimijianfang\\Crontab\\CrontabServiceProvider"
             ]
 
         }

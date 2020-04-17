@@ -1,13 +1,13 @@
 <?php
 
-namespace ArrowJustDoIt\Crontab\Http\Controllers;
+namespace Yimijianfang\Crontab\Http\Controllers;
 
 use Cron\CronExpression;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Layout\Content;
-use ArrowJustDoIt\Crontab\Http\Models\Crontab;
+use Yimijianfang\Crontab\Http\Models\Crontab;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Routing\Controller;

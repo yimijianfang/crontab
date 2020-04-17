@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrowJustDoIt\Crontab;
+namespace Yimijianfang\Crontab;
 
 use Encore\Admin\Extension;
 

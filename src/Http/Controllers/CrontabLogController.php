@@ -1,8 +1,8 @@
 <?php
 
-namespace ArrowJustDoIt\Crontab\Http\Controllers;
+namespace Yimijianfang\Crontab\Http\Controllers;
 
-use ArrowJustDoIt\Crontab\Http\Models\CrontabLog;
+use Yimijianfang\Crontab\Http\Models\CrontabLog;
 use Illuminate\Routing\Controller;
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Grid;

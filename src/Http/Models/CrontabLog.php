@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrowJustDoIt\Crontab\Http\Models;
+namespace Yimijianfang\Crontab\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
