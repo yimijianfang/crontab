@@ -58,7 +58,7 @@ class CrontabLogController extends Controller
     protected function grid()
     {
         $grid = new Grid(new CrontabLog());
-        $projectId = env('PROJECTID', '');
+        $projectId = env('PROJECT_ID', '');
         if($projectId){
             $grid->model()->where('project_id', $projectId)->orderBy('id', 'desc');
         }else{
